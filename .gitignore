@@ -1,0 +1,17 @@
+# MkDocs build output
+site/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Secrets / env
+.env
+.env.*
+*.pem
+*.key
+
+# OS cruft
+**/.DS_Store

@@ -1,0 +1,74 @@
+site_name: MCP for E-Commerce — Business-Context AI Agents
+
+nav:
+  - Overview: index.md
+  - Architecture: architecture.md
+  - Implementation: implementation.md
+  - Security: security.md
+
+site_author: Yassine TEIMI
+site_description: >-
+  A Model Context Protocol (MCP) proof of concept that gives an e-commerce
+  company's AI agents real business context — orders, inventory, logistics,
+  returns, claims and payments — via scoped MCP servers, clients, and the
+  Tools/Resources/Prompts model.
+
+repo_name: yassineteimi/mcp-ecommerce-agent
+repo_url: https://github.com/yassineteimi/mcp-ecommerce-agent
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.tabs.link
+    - content.code.annotation
+    - content.code.copy
+  language: en
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+      primary: teal
+      accent: lime
+    - scheme: default
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+      primary: teal
+      accent: purple
+
+extra:
+  social:
+    - icon: fontawesome/brands/github-alt
+      link: https://github.com/yassineteimi
+    - icon: fontawesome/brands/linkedin
+      link: https://linkedin.com/in/yassine-teimi
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.arithmatex:
+      generic: true
+  - footnotes
+  - pymdownx.details
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.mark
+
+plugins:
+  - search
+
+copyright: |
+  &copy; 2024 <a href="https://github.com/yassineteimi" target="_blank" rel="noopener">Yassine TEIMI</a>
